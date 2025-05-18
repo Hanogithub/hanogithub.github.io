@@ -1,10 +1,13 @@
 body {
+    /* Dark gradient background and white text for high contrast */
     background: linear-gradient(to right, #2e2e2e, #000000); 
     color: white; 
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", ...;
 }
 
+/* Animation for elements to fade in and slide upwards */
 @keyframes fadeInUp {
+    /* Fades in and slides up */
     from {
         opacity: 0;
         transform: translateY(40px);
@@ -16,6 +19,7 @@ body {
 }
 
 .scroll-graph {
+    /* Full screen section with fade animation */
     height: 100vh; 
     display: flex;
     align-items: center;
@@ -23,27 +27,34 @@ body {
     opacity: 0;
     animation: fadeInUp 1s ease-out forwards;
 }
-.graph-1 { animation-delay: 0.1s; }
+
+/* Delay each graph's animation for a staggered effect */
+.graph-1 { animation-delay: 0.1s; }  /* Each graph fades in later */
 .graph-2 { animation-delay: 1.5s; }
 .graph-3 { animation-delay: 3s; }
 .graph-4 { animation-delay: 4.5s; }
 .graph-5 { animation-delay: 6s; }
-.graph-6 { animation-delay: 7.2s; }
+.graph-6 { animation-delay: 7.2s; }     
+
 .scroll-graph img {
+    /* Graph image styling */
     width: 40%;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
+
 .graph-1 img {
+    /* Smaller and lifted graph image */
     width: 20%;
     height: auto;
     position: relative;
     top: -100px;
 }
- 
+
 h1, h2, h3, h4 {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+    /* Consistent font across headers */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", ...;
 }
 
 h1 {
@@ -64,11 +75,11 @@ h2 {
     font-size: 36px; 
     margin-top: 250px; 
     margin-left: 20px; 
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
     font-weight: bold;
 }
 
 .box-row {
+    /* Row layout for square video boxes */
     display: flex;
     justify-content: flex-start;
     gap: 20px; 
@@ -77,6 +88,7 @@ h2 {
 }
 
 .square {
+    /* Grey square for embedding video */
     position: absolute;  
     width: 600px; 
     height: 425px; 
@@ -87,17 +99,14 @@ h2 {
     border-bottom-left-radius: 70px;
 }
 
-.top-right {
-    right: 10px;
-    top: 100px; 
-}
-
 .square-video {
     width: 100%; 
     height: 100%; 
     object-fit: cover; 
 }
+
 .gradient-box {
+    /* Small gradient Box */
     width: 250px; 
     height: 125px; 
     background: linear-gradient(to right, #2c2625, #201d1b); 
@@ -111,16 +120,9 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
 }
 
-.gradient-row {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    margin-top: 50px; 
-    margin-left: 10px;
-}
+/* Styling for images inside gradient boxes */
 .gradient-box img {
     max-width: 40%;
     height: auto;         
@@ -128,16 +130,28 @@ h2 {
     display: block;       
 }
 
+.gradient-row {
+    /* Row layout for gradient boxes */
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 50px; 
+    margin-left: 10px;
+}
+
 .apple-buttons { 
+    /* Buttons */
     display: flex; 
-    flex-direction: column; /* Stack buttons vertically */ 
-    justify-content: flex-start; /* Align buttons to the top */ 
-    align-items: flex-start; /* Align buttons to the left */ 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
     gap: 20px; 
-    margin-top: -500px; /* Move it even higher */ 
+    margin-top: -500px; 
     margin-left: 300px; 
 } 
+
 .apple-btn { 
+    /* Apple-style button look */
     display: inline-block; 
     padding: 6px 12px;  
     background-color: #ffffff; 
@@ -152,15 +166,16 @@ h2 {
     height: 35px;  
     text-align: center; 
     line-height: 35px; 
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
-} 
+}
+
 .apple-btn:hover { 
     background-color: #ff0000; 
     box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Glowing effect */ 
-} 
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+}
 
 .hamburger-menu {
+    /* Sizes for dropdown menu */
     font-size: 30px;
     color: white;
     cursor: pointer;
@@ -168,34 +183,30 @@ h2 {
     top: 10px;
     right: 10px;
     z-index: 1000;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
 }
 
+/* Dropdown menu that appears on hover */
 .dropdown-content {
     display: none;
     position: absolute;
     right: 0;
     background-color: #fff;
-    min-width: 100px; /* Slightly bigger width */
+    min-width: 100px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 999;
-    border-radius: 12px; /* Added rounded corners */
+    border-radius: 12px;
 }
 
 .dropdown-content a {
+    /* Dropdown link styling */
     color: black;
-    padding: 8px 10px; /* Slightly increased padding */
-    font-size: 13px;  /* Slightly increased font size */
+    padding: 8px 10px;
+    font-size: 13px;
     text-decoration: none;
     display: block;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
 }
 
-.dropdown-content a:hover {
-    background-color: red;
-    color: white;
-}
-
+.dropdown-content a:hover,
 .dropdown-content a:active {
     background-color: red;
     color: white;
@@ -206,6 +217,7 @@ h2 {
 }
 
 .custom-gradient-box {
+    /* Larger gradient info box */
     position: absolute;
     top: 200px; 
     left: 15px; 
@@ -222,9 +234,11 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
 }
+
+/* Horizontal menu with text navigation buttons */
 .h4-container {
+    /* Horizontal row of H4 links */
     position: absolute;
     top: 20px;
     left: 20px;
@@ -233,32 +247,21 @@ h2 {
     gap: 30px; 
     color: white;
     font-size: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
-}
-
-.h4-container h4 {
-    margin: 0; 
 }
 
 .h4-container .text-button {
     background: none;
     border: none;
     color: white;
-    font: inherit;
     cursor: pointer;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
 }
 
 .h4-container .text-button:hover {
-    text-decoration: none;
     border-bottom: 2px solid red;
 }
 
-body.about-us .about-us {     
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-                 "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+body.about-us .about-us {              /* About us styling */
+    /* About Us text block */
     margin-top: 190px; 
     line-height: 1.6;   
     font-size: 16px;
@@ -270,23 +273,24 @@ body.about-us .about-us {
 }
 
 .world-symbol {
+    /* Floating round emoji button */
     font-size: 36px;
-    color: black;                
-    background-color: white;     
-    border-radius: 50%;          
+    color: black;
+    background-color: white;
+    border-radius: 50%;
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;             
-    bottom: 150px;              
-    left: 30%;                   
-    transform: translateX(-50%); 
-    font-family: "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Segoe UI Symbol", "Android Emoji", EmojiSymbols;
+    position: fixed;
+    bottom: 150px;
+    left: 30%;
+    transform: translateX(-50%);
 }
 
 body.about-us .footer-text {
+    /* Floating footer note */
     position: fixed;
     bottom: 120px; 
     left: 53%;    
@@ -295,8 +299,6 @@ body.about-us .footer-text {
     font-size: 14px;
     color: white;
     text-align: left;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", 
-                 "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
 }
 
 body.about-us .white-line {
@@ -308,6 +310,7 @@ body.about-us .white-line {
 }
 
 body.about-us .back-button {
+    /* Button that links back */
     display: inline-block;
     padding: 10px 20px;
     font-size: 14px;
@@ -315,14 +318,12 @@ body.about-us .back-button {
     color: black;
     font-weight: bold;
     border: none;
-    border-radius: 25px; 
+    border-radius: 25px;
     text-decoration: none;
     position: fixed;
     bottom: 60px;
     left: 7%; 
     transform: translateX(-50%);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", 
-                 "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -333,12 +334,11 @@ body.about-us .back-button:hover {
     color: white;
 }
 
-
 body.statistics {
+    /* Background for statistics page */
     background: linear-gradient(to right, #2e2e2e, #000000); 
     padding-bottom: 1000px; 
 }
-
 
 .statistics-img,
 .graph-img {
@@ -347,15 +347,14 @@ body.statistics {
     display: block;
     margin: 200px auto 0; 
 }
-.graph-img {
-    margin: 600px auto 0;
-}
 
+/* Large graph and statistics images used on the statistics page */
 .statistics-img2, .graph-img2, .graph-img3 {
     width: 900px;
     height: 350px;
     border-radius: 60px;
 }
+
 .image-container .statistics-img2,
 .image-container .graph-img2,
 .image-container .graph-img3 {
@@ -364,6 +363,7 @@ body.statistics {
 }
 
 body.statistics .back-button {
+    /* Back button on stats page */
     display: inline-block;
     padding: 10px 20px;
     font-size: 14px;
@@ -373,8 +373,6 @@ body.statistics .back-button {
     border: none;
     border-radius: 25px;
     text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-                 "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     position: fixed;
@@ -382,13 +380,15 @@ body.statistics .back-button {
     left: 20px;
     z-index: 999;
 }
+
 body.statistics .back-button:hover {
     background-color: #ff0000;
     color: white;
 }
 
-
+/* Downward pointing arrow with bounce animation for scroll prompt */
 .down-arrow {
+    /* Animated bouncing arrow */
     font-size: 40px;
     font-weight: bold;
     color: white;
@@ -400,42 +400,41 @@ body.statistics .back-button:hover {
     animation: bounce 2s infinite;
 }
 
-
-
 body.Trending {
-  background: linear-gradient(to right, #1f1f1f, #3a3a3a); 
-  color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", 
-               "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
-  padding: 80px;
+    /* Trending page background and padding */
+    background: linear-gradient(to right, #1f1f1f, #3a3a3a); 
+    color: white;
+    padding: 80px;
 }
 
 body.Trending .video-gallery {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 500px;
+    /* Layout for trending videos */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 500px;
 }
 
 body.Trending .video-gallery video {
-  border-radius: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  object-fit: cover;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
 }
 
-.video-gallery {
+.video-gallery {                      
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 20px;         
     margin-top: 200px;
 }
-  
+
 .video-gallery video {
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+
 body.statistics h2 { 
     display: block; 
     margin-top: 200px; 
@@ -448,11 +447,11 @@ body.statistics h2 {
     margin-left: 100px;  
     margin-right: auto; 
 } 
-    
+
 body.statistics p { 
     width: 100%; 
-    max-width: 500px; 
+    max-width: 500px;  
     margin-left: -1400px; 
     margin-right: auto; 
     text-align: left; 
-} 
+}
